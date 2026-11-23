@@ -1,7 +1,7 @@
 # OnyxScale
 
 Your **Tailscale** network inside your browser, and nowhere else.
-For **Firefox**, **Chrome**, **Edge** and **Brave** on Windows, macOS and Linux.
+For **Chrome**, **Edge**, **Brave** and **Firefox** on Windows, macOS and Linux.
 
 Each browser profile becomes its own device on your tailnet. Your computer's
 network, DNS and other apps are untouched: no VPN adapter, no system-wide
@@ -34,14 +34,17 @@ itself with your browsers for your user account only.
 
 ### 2. The browser extension
 
-**Firefox:** open [Releases](../../releases/latest) in Firefox and click
-`onyxscale-firefox.xpi`, then **Add**. It is signed by Mozilla and updates
-itself. When you first open it, click **Allow** so it can route your tailnet's
-addresses.
+**Chrome, Edge, Brave, Vivaldi:** download `onyxscale-chrome.zip` from
+[Releases](../../releases/latest) and unzip it somewhere it can stay (for
+example `Documents\OnyxScale`). Open `chrome://extensions` (or
+`edge://extensions`), turn on **Developer mode**, click **Load unpacked** and
+pick the unzipped folder. Pin OnyxScale from the puzzle-piece menu.
 
-**Chrome, Edge, Brave:** download `onyxscale-chrome.zip` and unzip it
-somewhere it can stay. Open `chrome://extensions` (or `edge://extensions`),
-turn on **Developer mode**, click **Load unpacked** and pick the unzipped folder.
+**Firefox:** a signed add-on that installs normally is coming. Until then,
+`onyxscale-firefox-unsigned.zip` can be loaded for testing from
+`about:debugging` → **Load Temporary Add-on** (it is removed when Firefox
+restarts), or installed permanently in Firefox Developer Edition or Nightly
+with `xpinstall.signatures.required` set to `false`.
 
 ### 3. Sign in
 
