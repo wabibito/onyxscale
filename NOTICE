@@ -1,0 +1,7 @@
+OnyxScale
+Copyright 2026 NA Research
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Includes code adapted from Tailchrome (MIT) and links Tailscale (BSD-3-Clause);
+see THIRD_PARTY_NOTICES.md.
